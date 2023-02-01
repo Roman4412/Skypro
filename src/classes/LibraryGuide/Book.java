@@ -23,7 +23,7 @@ public class Book {
     }
 
     public void setPublicationYear(int publicationYear) {
-        if (publicationYear < currentYear) {
+        if (publicationYear <= currentYear) {
             this.publicationYear = publicationYear;
         } else {
             System.out.println("Указанный год еще не наступил," +
